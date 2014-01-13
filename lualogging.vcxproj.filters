@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="logging">
+      <UniqueIdentifier>{eaf06705-f720-4a59-ac56-ac42e4da4752}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\logging.lua" />
+    <CustomBuild Include="src\logging\console.lua">
+      <Filter>logging</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\logging\email.lua">
+      <Filter>logging</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\logging\file.lua">
+      <Filter>logging</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\logging\rolling_file.lua">
+      <Filter>logging</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\logging\socket.lua">
+      <Filter>logging</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\logging\sql.lua">
+      <Filter>logging</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
